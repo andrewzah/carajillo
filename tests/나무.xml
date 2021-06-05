@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        
+            
+            	
+            		
+            	 <channel>
+			        <title>우리말샘 개발 지원(Open API) - 사전 어휘 검색</title>
+			        <link>http://opendict.korean.go.kr</link>
+			        <description>우리말샘 개발 지원(Open API) - 사전 어휘 검색 결과</description>
+			        <lastBuildDate>20210605141340</lastBuildDate> 
+			        <total>251</total>
+			        <start>1</start>
+			        <num>10</num>    
+                
+                    <item>
+                        <word>수면</word>                        
+                       	
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	
+	                       	
+							
+								 
+							
+							
+						
+							
+						
+							
+                       	<sense>
+                       		<target_code>203249</target_code>
+                       		<sense_no>001</sense_no>
+                       		<definition>물의 겉면.</definition >
+							
+							<pos>명사</pos>
+							
+							<link>http://opendict.korean.go.kr/dictionary/view?sense_no=203249</link>
+							<type>일반어</type>
+							
+							
+							<origin>水面</origin>
+							
+							
+							
+						</sense>
+						
+                    </item>
+                
+                    <item>
+                        <word>수면</word>                        
+                       	
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	
+	                       	
+							
+								 
+							
+							
+						
+							
+						
+							
+                       	<sense>
+                       		<target_code>463440</target_code>
+                       		<sense_no>005</sense_no>
+                       		<definition>부끄러움을 띤 얼굴.</definition >
+							
+							<pos>명사</pos>
+							
+							<link>http://opendict.korean.go.kr/dictionary/view?sense_no=463440</link>
+							<type>일반어</type>
+							
+							
+							<origin>羞面</origin>
+							
+							
+							
+						</sense>
+						
+                    </item>
+                
+                    <item>
+                        <word>수면</word>                        
+                       	
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	
+	                       	
+							
+								 
+							
+							
+						
+							
+						
+							
+                       	<sense>
+                       		<target_code>463479</target_code>
+                       		<sense_no>006</sense_no>
+                       		<definition>걱정하면서 잠을 잠. 또는 그 잠.</definition >
+							
+							<pos>명사</pos>
+							
+							<link>http://opendict.korean.go.kr/dictionary/view?sense_no=463479</link>
+							<type>일반어</type>
+							
+							
+							<origin>愁眠</origin>
+							
+							
+							
+						</sense>
+						
+                    </item>
+                
+                    <item>
+                        <word>수면</word>                        
+                       	
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	
+	                       	
+							
+								 
+							
+							
+						
+							
+						
+							
+                       	<sense>
+                       		<target_code>369035</target_code>
+                       		<sense_no>007</sense_no>
+                       		<definition>잠을 자는 일.</definition >
+							
+							<pos>명사</pos>
+							
+							<link>http://opendict.korean.go.kr/dictionary/view?sense_no=369035</link>
+							<type>일반어</type>
+							
+							
+							<origin>睡眠</origin>
+							
+							
+							
+						</sense>
+						
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	
+	                       	
+							
+								 
+							
+							
+						
+							
+						
+							
+                       	<sense>
+                       		<target_code>372433</target_code>
+                       		<sense_no>008</sense_no>
+                       		<definition>활동을 쉬는 상태를 비유적으로 이르는 말.</definition >
+							
+							<pos>명사</pos>
+							
+							<link>http://opendict.korean.go.kr/dictionary/view?sense_no=372433</link>
+							<type>일반어</type>
+							
+							
+							<origin>睡眠</origin>
+							
+							
+							
+						</sense>
+						
+                    </item>
+                
+                    <item>
+                        <word>수면</word>                        
+                       	
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	
+	                       	
+							
+								 
+							
+							
+						
+							
+						
+							
+                       	<sense>
+                       		<target_code>203465</target_code>
+                       		<sense_no>009</sense_no>
+                       		<definition>수척한 얼굴.</definition >
+							
+							<pos>명사</pos>
+							
+							<link>http://opendict.korean.go.kr/dictionary/view?sense_no=203465</link>
+							<type>일반어</type>
+							
+							
+							<origin>瘦面</origin>
+							
+							
+							
+						</sense>
+						
+                    </item>
+                
+                    <item>
+                        <word>수면</word>                        
+                       	
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	
+	                       	
+							
+								 
+							
+							
+						
+							
+						
+							
+                       	<sense>
+                       		<target_code>479463</target_code>
+                       		<sense_no>011</sense_no>
+                       		<definition>짐승의 얼굴. 또는 짐승의 얼굴과 같이 험상궂게 생긴 얼굴.</definition >
+							
+							<pos>명사</pos>
+							
+							<link>http://opendict.korean.go.kr/dictionary/view?sense_no=479463</link>
+							<type>일반어</type>
+							
+							
+							<origin>獸面</origin>
+							
+							
+							
+						</sense>
+						
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	
+	                       	
+							
+								 
+							
+							
+						
+							
+						
+							
+                       	<sense>
+                       		<target_code>482889</target_code>
+                       		<sense_no>012</sense_no>
+                       		<definition>짐승의 얼굴 모양을 본떠서 만든 탈이나 조각.</definition >
+							
+							<pos>명사</pos>
+							
+							<link>http://opendict.korean.go.kr/dictionary/view?sense_no=482889</link>
+							<type>일반어</type>
+							
+							
+							<origin>獸面</origin>
+							
+							
+							
+						</sense>
+						
+                    </item>
+                
+                    <item>
+                        <word>수면</word>                        
+                       	
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	
+	                       	
+							
+								 
+							
+							
+								
+									
+										
+									
+								
+							
+						
+							
+						
+							
+                       	<sense>
+                       		<target_code>537126</target_code>
+                       		<sense_no>003</sense_no>
+                       		<definition>삼짇날에 먹는 음식의 하나. 녹두로 국수를 만드는데, 붉은 물을 들이고 꿀물을 탄다.</definition >
+							
+							<pos>명사</pos>
+							
+							<link>http://opendict.korean.go.kr/dictionary/view?sense_no=537126</link>
+							<type>일반어</type>
+							
+							<cat>민속</cat>
+							
+							
+							<origin>水麵</origin>
+							
+							
+							
+						</sense>
+						
+                    </item>
+                
+                    <item>
+                        <word>수면</word>                        
+                       	
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	
+	                       	
+							
+								 
+							
+							
+								
+									
+										
+									
+								
+							
+						
+							
+						
+							
+                       	<sense>
+                       		<target_code>203466</target_code>
+                       		<sense_no>010</sense_no>
+                       		<definition>‘번뇌’를 달리 이르는 말. 번뇌가 중생을 늘 따라다니며 마음을 혼미하게 하는 것이 잠자는 것과 같다는 뜻으로 이르는 말이다.</definition >
+							
+							<pos>명사</pos>
+							
+							<link>http://opendict.korean.go.kr/dictionary/view?sense_no=203466</link>
+							<type>일반어</type>
+							
+							<cat>불교</cat>
+							
+							
+							<origin>隨眠</origin>
+							
+							
+							
+						</sense>
+						
+                    </item>
+                
+                    <item>
+                        <word>수면</word>                        
+                       	
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	
+	                       	
+							
+								 
+							
+							
+								
+									
+										
+									
+								
+							
+						
+							
+						
+							
+                       	<sense>
+                       		<target_code>203250</target_code>
+                       		<sense_no>002</sense_no>
+                       		<definition>녹조류 별해캄과에 속하는 담수 조류. 머리카락 모양의 사상체로 분열법과 접합에 의하여 번식한다. 생리학ㆍ분류학의 실험 재료로 쓰고 식용하거나 약용한다. 전 세계에 150여 종이 분포한다. 호수나 늪 따위의 민물에서 볼 수 있다.</definition >
+							
+							<pos>명사</pos>
+							
+							<link>http://opendict.korean.go.kr/dictionary/view?sense_no=203250</link>
+							<type>일반어</type>
+							
+							<cat>생명</cat>
+							
+							
+							<origin>水綿</origin>
+							
+							
+							
+						</sense>
+						
+                    </item>
+                
+                    <item>
+                        <word>수면</word>                        
+                       	
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	 
+	                       	
+	                       	
+							
+								 
+							
+							
+								
+									
+										
+									
+								
+							
+						
+							
+						
+							
+                       	<sense>
+                       		<target_code>203251</target_code>
+                       		<sense_no>004</sense_no>
+                       		<definition>어떠한 평면이나 직선과 수직을 이루는 면.</definition >
+							
+							<pos>명사</pos>
+							
+							<link>http://opendict.korean.go.kr/dictionary/view?sense_no=203251</link>
+							<type>일반어</type>
+							
+							<cat>수학</cat>
+							
+							
+							<origin>垂面</origin>
+							
+							
+							
+						</sense>
+						
+                    </item>
+                
+                 </channel>  
+                	
+                	
+                
+            
+            
+        
