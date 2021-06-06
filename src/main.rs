@@ -3,8 +3,13 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 use std::path::PathBuf;
 use std::result::Result;
+use std::io::Write;
 
+use ansi_term::Colour::{
+    Cyan, Green, Red, Yellow
+};
 use argh::{self, FromArgs};
+use tabwriter::TabWriter;
 
 mod errors;
 mod models;
@@ -15,7 +20,7 @@ use crate::models::{OpenDictRequest, OpenDictResponse};
 
 static API_BASE_URL: &str = "https://opendict.korean.go.kr/api/";
 
-// https://opendict.korean.go.kr/api/search?certkey_no=2727&key=D2D5C90646A9451DECA5E7AB3E30F727&target_type=search&part=word&q=%EC%88%98%EB%A9%B4&sort=dict&start=1&num=10
+// https://opendict.korean.go.kr/api/search?certkey_no=2727&key=<key>&target_type=search&part=word&q=%EC%88%98%EB%A9%B4&sort=dict&start=1&num=10
 
 /// application args
 #[derive(FromArgs)]
@@ -45,10 +50,14 @@ fn main() -> Result<(), CarajilloError> {
         .filter_map(Result::ok)
         .collect();
 
-    let dict_results: Vec<()> = words
-        .into_iter()
-        .filter_map(|w| process_word(&w, &kdict_key).ok())
-        .collect();
+    for word in words {
+        process_word(&word, &kdict_key)?;
+    }
+
+    // let dict_results: Vec<()> = words
+    //     .into_iter()
+    //     .filter_map(|w| process_word(&w, &kdict_key).ok())
+    //     .collect();
 
     Ok(())
 }
@@ -62,19 +71,24 @@ fn process_word(word: &str, key: &str) -> Result<(), CarajilloError> {
     let body: String = ureq::post(&url)
         .call()?
         .into_string()?;
+    // let body = std::fs::read_to_string("./tests/나무.xml")?;
 
-    println!("{}", body.chars().take(750).collect::<String>());
+    let parsed = quick_xml::de::from_str::<OpenDictResponse>(&body)?;
 
-    // println!("{}", &body);
+    let senses = parsed.senses();
 
-    match quick_xml::de::from_str::<OpenDictResponse>(&body) {
-        Ok(parsed) => {
-            println!("ok:\n{:?}", parsed);
-        },
-        Err(e) => {
-            eprintln!("err!\n{}", e);
-        },
+    let mut sense_str = format!("Definitions for {}:\n", &word);
+
+    for (idx, sense) in senses.iter().enumerate() {
+        let formatted = format!("{}\t{}\t{:?}\t{}\n", idx,
+            Red.paint(&sense.origin), &sense.pos, sense.definition);
+        sense_str.push_str(&formatted);
     }
+
+    let mut tw = TabWriter::new(vec![]);
+    write!(&mut tw, "{}", &sense_str)?;
+    tw.flush()?;
+    println!("{}", &sense_str);
 
     Ok(())
 }

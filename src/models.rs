@@ -19,7 +19,7 @@ impl OpenDictRequest {
             part: String::from("word"),
             query: String::from(word),
             start: String::from("1"),
-            num: String::from("10"),
+            num: String::from("100"),
         }
     }
 
@@ -58,50 +58,51 @@ impl OpenDictRequest {
 
 #[derive(Debug, Deserialize)]
 pub struct OpenDictResponse {
-    #[serde(rename = "$value")]
-    pub channel: OpenDictChannel,
+    pub title: String,
+    pub link: String,
+    pub total: String,
+    pub description: String,
+    pub start: String,
+
+    #[serde(rename = "item")]
+    pub items: Vec<OpenDictItem>,
+
+    #[serde(rename = "lastBuildDate")]
+    pub last_build_date: String,
 }
 
+impl OpenDictResponse {
+    pub fn senses(&self) -> Vec<OpenDictSense> {
+        let mut out = vec![];
 
-#[derive(Debug, Deserialize)]
-pub struct OpenDictChannel {
-    // #[serde(rename = "$value")]
-    // pub item: Vec<OpenDictItem>,
+        for item in &self.items {
+            for sense in &item.senses {
+                out.push(sense.clone())
+            }
+        }
 
-    pub description: String,
-
-    pub link: String,
-
-    // #[serde(rename = "$value")]
-    pub num: i32,
-
-    // #[serde(rename = "$value")]
-    pub start: i32,
-
-    // #[serde(rename = "$value")]
-    pub title: String,
-
-    // #[serde(rename = "$value")]
-    pub total: i32,
+        out
+    }
 }
 
 #[derive(Debug, Deserialize)]
 pub struct OpenDictItem {
-    // #[serde(rename = "sense")]
-    //  pub sense: Vec<OpenDictSense>,
+    pub word: String,
 
-    // pub word: String,
+    #[serde(rename = "sense")]
+    pub senses: Vec<OpenDictSense>,
 }
 
-// TODO: typ->type
-#[derive(Debug, Deserialize)]
+#[derive(Clone, Debug, Deserialize)]
 pub struct OpenDictSense {
-    definition: String,
-    link: Vec<String>,
-    origin: String,
-    pos: String,
-    sense_no: i32,
-    target_code: String,
-    typ: String,
+    pub definition: String,
+    pub link: Vec<String>,
+    pub origin: String,
+    pub pos: Option<String>,
+    pub sense_no: i32,
+    pub target_code: String,
+
+    #[serde(rename = "type")]
+    pub typ: String,
 }
 
