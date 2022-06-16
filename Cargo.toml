@@ -2,13 +2,13 @@
 name = "carajillo"
 version = "0.1.0"
 authors = ["Andrew Zah <zah@andrewzah.com>"]
-edition = "2018"
+edition = "2021"
 license = "AGPL-3.0-only"
 
 [dependencies]
 ansi_term = "0.12"
 argh = "0.1"
-quick-xml = { version = "0.22", features = [ "serialize" ] }
-serde = { version = "1.0", features = [ "derive" ] }
-ureq = "2.1"
+quick-xml = { version = "0.23", features = [ "serialize" ] }
+serde = { version = "1", features = [ "derive" ] }
 tabwriter = { version = "1", features = ["ansi_formatting"] }
+ureq = "2"
